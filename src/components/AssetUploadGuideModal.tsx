@@ -43,16 +43,23 @@ export const AssetUploadGuideModal: React.FC<AssetUploadGuideModalProps> = ({ is
           <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 space-y-2">
             <div className="flex items-center gap-2 text-white font-bold text-sm">
               <FileUp className="w-4 h-4 text-blue-400" />
-              <span>1. How to attach your official PDF CV</span>
+              <span>1. Official PDF CV Location</span>
             </div>
             <p className="text-slate-400 text-xs leading-relaxed">
-              Place your PDF resume file in the public folder at:
+              Your official PDF resume file is installed and available in the public folder at:
             </p>
             <div className="font-mono text-xs bg-slate-950 p-2.5 rounded border border-slate-800 text-blue-300 flex items-center justify-between">
-              <span>/public/cv/Victory_Madumere_CV.pdf</span>
+              <span>/public/Victory_Madumere_CV.pdf</span>
+              <a
+                href="/Victory_Madumere_CV.pdf"
+                download="Victory_Madumere_CV.pdf"
+                className="text-xs text-blue-400 hover:text-blue-300 underline font-sans ml-2"
+              >
+                Download Test
+              </a>
             </div>
             <p className="text-slate-400 text-xs">
-              Once placed there, all "Download CV" buttons in the navigation, hero, and contact sections will automatically serve your direct PDF. The built-in "Print / Save PDF" modal already provides an immediate high-resolution digital printout.
+              Every "Download CV" button in the navigation, hero, contact, and footer sections directly downloads this PDF file.
             </p>
           </div>
 

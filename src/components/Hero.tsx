@@ -71,13 +71,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCvModal }) => {
               </a>
 
               {/* CTA 2: Download CV */}
-              <button
-                onClick={onOpenCvModal}
+              <a
+                href="/Victory_Madumere_CV.pdf"
+                download="Victory_Madumere_CV.pdf"
                 className="inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-semibold text-slate-200 bg-slate-900 hover:bg-slate-800 border border-slate-700/80 hover:border-slate-600 rounded-lg transition-all duration-200 whitespace-nowrap"
               >
                 <FileText className="w-4 h-4 text-blue-400" />
                 <span>Download CV</span>
-              </button>
+              </a>
 
               {/* CTA 3: Get In Touch */}
               <a

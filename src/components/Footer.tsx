@@ -29,13 +29,14 @@ export const Footer: React.FC<FooterProps> = ({ onOpenCvModal, onOpenUploadGuide
 
           {/* Quick utility links */}
           <div className="flex flex-wrap items-center justify-center gap-4 text-slate-400">
-            <button
-              onClick={onOpenCvModal}
+            <a
+              href="/Victory_Madumere_CV.pdf"
+              download="Victory_Madumere_CV.pdf"
               className="hover:text-white transition-colors flex items-center gap-1"
             >
               <FileText className="w-3.5 h-3.5 text-blue-400" />
-              <span>Resume PDF</span>
-            </button>
+              <span>Download CV (PDF)</span>
+            </a>
             <span className="text-slate-700">·</span>
             <button
               onClick={onOpenUploadGuide}

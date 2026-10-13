@@ -54,14 +54,15 @@ export const CvModal: React.FC<CvModalProps> = ({ isOpen, onClose, onOpenUploadG
               <Printer className="w-3.5 h-3.5" />
               <span>Print / Save PDF</span>
             </button>
-            <button
-              onClick={handleDownload}
+            <a
+              href="/Victory_Madumere_CV.pdf"
+              download="Victory_Madumere_CV.pdf"
               className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-lg transition-colors"
               title="Download file directly"
             >
               <Download className="w-3.5 h-3.5" />
               <span>Direct PDF</span>
-            </button>
+            </a>
             <button
               onClick={onClose}
               className="p-1.5 text-slate-400 hover:text-white rounded-lg bg-slate-900 border border-slate-800 transition-colors ml-1"
@@ -75,17 +76,16 @@ export const CvModal: React.FC<CvModalProps> = ({ isOpen, onClose, onOpenUploadG
         {/* Informational banner on PDF file location */}
         <div className="px-6 py-2.5 bg-blue-950/30 border-b border-blue-900/30 text-xs text-blue-300 flex items-center justify-between">
           <div className="flex items-center gap-1.5 truncate">
-            <span className="font-semibold">Note:</span>
-            <span>Target path for uploaded PDF: <code className="font-mono text-white">/public/cv/Victory_Madumere_CV.pdf</code></span>
+            <span className="font-semibold">Official PDF:</span>
+            <span>Ready for immediate download at <code className="font-mono text-white">/Victory_Madumere_CV.pdf</code></span>
           </div>
-          {onOpenUploadGuide && (
-            <button
-              onClick={onOpenUploadGuide}
-              className="underline text-blue-400 hover:text-blue-200 shrink-0 ml-2"
-            >
-              Setup Instructions
-            </button>
-          )}
+          <a
+            href="/Victory_Madumere_CV.pdf"
+            download="Victory_Madumere_CV.pdf"
+            className="underline text-blue-400 hover:text-blue-200 shrink-0 ml-2 font-medium"
+          >
+            Download PDF Now
+          </a>
         </div>
 
         {/* Modal Printable CV Sheet */}

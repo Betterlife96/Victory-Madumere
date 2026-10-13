@@ -97,13 +97,14 @@ export const Contact: React.FC<ContactProps> = ({ onOpenCvModal }) => {
 
             {/* Social links & CV Download */}
             <div className="pt-4 flex flex-wrap items-center gap-3">
-              <button
-                onClick={onOpenCvModal}
+              <a
+                href="/Victory_Madumere_CV.pdf"
+                download="Victory_Madumere_CV.pdf"
                 className="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-lg transition-colors shadow-sm"
               >
                 <FileText className="w-4 h-4" />
                 <span>Download CV (PDF)</span>
-              </button>
+              </a>
 
               <div className="flex items-center gap-2">
                 <button

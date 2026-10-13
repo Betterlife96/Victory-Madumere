@@ -48,7 +48,7 @@ export const PERSONAL_INFO = {
     location: 'United Kingdom',
     period: 'March 2019 – September 2021',
   },
-  cvPath: '/cv/Victory_Madumere_CV.pdf',
+  cvPath: '/Victory_Madumere_CV.pdf',
 };
 
 export const ACHIEVEMENTS = [
