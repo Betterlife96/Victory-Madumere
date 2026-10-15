@@ -67,6 +67,12 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
               src={project.image}
               alt={`${project.title} interface preview`}
               referrerPolicy="no-referrer"
+              onError={(e) => {
+                const target = e.currentTarget;
+                if (!target.src.includes('analytics_dashboard_preview')) {
+                  target.src = '/projects/analytics_dashboard_preview.jpg';
+                }
+              }}
               className="w-full h-64 sm:h-80 object-cover object-top"
             />
             {/* Conceptual preview indicator */}

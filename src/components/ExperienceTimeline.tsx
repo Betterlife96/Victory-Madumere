@@ -4,7 +4,7 @@ import { Briefcase, MapPin, Calendar, ChevronDown, ChevronUp, CheckCircle2 } fro
 
 export const ExperienceTimeline: React.FC = () => {
   // All open by default or allow toggling
-  const [expandedIndices, setExpandedIndices] = useState<number[]>([0, 1, 2]);
+  const [expandedIndices, setExpandedIndices] = useState<number[]>([0, 1, 2, 3]);
 
   const toggleExpand = (index: number) => {
     if (expandedIndices.includes(index)) {
@@ -37,7 +37,7 @@ export const ExperienceTimeline: React.FC = () => {
             const isCurrent = index === 0;
 
             return (
-              <div key={exp.company} className="relative pl-6 sm:pl-10 group">
+              <div key={`${exp.company}-${exp.role}`} className="relative pl-6 sm:pl-10 group">
                 {/* Timeline node */}
                 <div
                   className={`absolute -left-[9px] top-1.5 w-[18px] h-[18px] rounded-full border-2 transition-colors ${

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { SKILL_CATEGORIES } from '../data/portfolioData';
-import { Code, Layout, GitMerge, CheckSquare, Zap, Network, Server, Sparkles } from 'lucide-react';
+import { Code, Layout, GitMerge, CheckSquare, Zap, Network, Server, Sparkles, ShoppingBag, Wrench, Globe } from 'lucide-react';
 
 export const Skills: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState<string>('All');
@@ -9,10 +9,13 @@ export const Skills: React.FC = () => {
     'Frontend Development': <Code className="w-4 h-4 text-blue-400" />,
     'UX/UI Engineering': <Layout className="w-4 h-4 text-indigo-400" />,
     'Frontend Architecture': <GitMerge className="w-4 h-4 text-cyan-400" />,
+    'E-commerce & Digital Products': <ShoppingBag className="w-4 h-4 text-purple-400" />,
     'Testing & Quality': <CheckSquare className="w-4 h-4 text-emerald-400" />,
     'Performance & Accessibility': <Zap className="w-4 h-4 text-amber-400" />,
-    'APIs & Integration': <Network className="w-4 h-4 text-violet-400" />,
-    'Backend & Tools': <Server className="w-4 h-4 text-rose-400" />,
+    'API Integration': <Network className="w-4 h-4 text-violet-400" />,
+    'Tools & Workflow': <Wrench className="w-4 h-4 text-teal-400" />,
+    'Additional Technical Skills': <Server className="w-4 h-4 text-rose-400" />,
+    'Languages': <Globe className="w-4 h-4 text-sky-400" />,
   };
 
   const allCategories = ['All', ...SKILL_CATEGORIES.map((c) => c.category)];

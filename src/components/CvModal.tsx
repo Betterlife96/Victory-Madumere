@@ -123,7 +123,7 @@ export const CvModal: React.FC<CvModalProps> = ({ isOpen, onClose, onOpenUploadG
               Professional Summary
             </h2>
             <p className="text-xs sm:text-sm text-slate-300 print:text-gray-800 leading-relaxed">
-              Senior Frontend Developer with nearly five years of experience building scalable, responsive, and high-performance web applications. Primary expertise in React, TypeScript, Next.js, frontend architecture, and UX/UI engineering. Demonstrated success delivering e-commerce platforms, real-time analytics dashboards, and customer review platforms with verified improvements in page load speeds and feature velocity.
+              Frontend-focused Software Engineer with 5+ years of experience developing scalable web applications, e-commerce platforms, and digital products using React, TypeScript, JavaScript, and Next.js. Strong background in frontend architecture, UX/UI engineering, reusable component systems, API integration, and performance optimization. Experienced in building responsive, accessible interfaces and supporting complex e-commerce workflows. Combines full-stack engineering expertise with a product-focused approach to delivering intuitive, maintainable, and high-performance digital experiences.
             </p>
           </div>
 
@@ -149,7 +149,7 @@ export const CvModal: React.FC<CvModalProps> = ({ isOpen, onClose, onOpenUploadG
             </h2>
             <div className="space-y-6">
               {EXPERIENCES.map((exp) => (
-                <div key={exp.company} className="space-y-2">
+                <div key={`${exp.company}-${exp.role}`} className="space-y-2">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                     <div>
                       <span className="font-bold text-white print:text-black text-sm sm:text-base">

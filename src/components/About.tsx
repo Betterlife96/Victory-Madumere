@@ -47,7 +47,7 @@ export const About: React.FC = () => {
           {/* Left Column: Story & Experience Narrative */}
           <div className="lg:col-span-7 space-y-6 text-slate-300 leading-relaxed">
             <p className="text-base sm:text-lg text-slate-200">
-              I am a Senior Frontend Developer with nearly five years of experience building scalable, responsive, and high-performance web applications across Berlin and London.
+              I am a Frontend-focused Senior Software Engineer with 5+ years of experience building scalable, responsive, and high-performance web applications across Berlin and London.
             </p>
             <p className="text-sm sm:text-base text-slate-300">
               My engineering approach centers on eliminating friction. I've engineered customer-facing interfaces for e-commerce platforms processing thousands of daily transactions, architected low-latency dashboards for real-time WebSocket telemetry, and built feedback platforms that analyzed over 50,000 customer reviews.

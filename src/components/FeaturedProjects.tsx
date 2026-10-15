@@ -55,6 +55,12 @@ export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ onSelectProj
                         src={project.image}
                         alt={`${project.title} Interface Mockup`}
                         referrerPolicy="no-referrer"
+                        onError={(e) => {
+                          const target = e.currentTarget;
+                          if (!target.src.includes('analytics_dashboard_preview')) {
+                            target.src = '/projects/analytics_dashboard_preview.jpg';
+                          }
+                        }}
                         className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#0d1017] via-transparent to-transparent opacity-80" />
